@@ -1,0 +1,35 @@
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User:
+            algorithm: bcrypt
+            cost: 12
+        AppBundle\Entity\User:
+            algorithm: bcrypt
+
+    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    providers:
+        database:
+            entity:
+                class: AppBundle:User
+                property: username
+
+    firewalls:
+        main:
+            anonymous: ~
+            form_login:
+                login_path: login
+                check_path: login
+            logout:
+                path: /logout
+    access_control:
+    # restrict access to certain URLs
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/user/show, roles: ROLE_USER }
+        - { path: ^/mission/show, roles: ROLE_USER }
+        - { path: ^/media/show, roles: ROLE_USER }
+        - { path: ^/user/, roles: ROLE_ADMIN }
+        - { path: ^/mission/, roles: ROLE_ADMIN }
+        - { path: ^/media/, roles: ROLE_ADMIN }
+

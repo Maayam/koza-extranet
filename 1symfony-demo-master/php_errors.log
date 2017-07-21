@@ -1,0 +1,6 @@
+[12-Jul-2017 06:26:09 UTC] PHP Warning:  require(/home/ubuntu/workspace/1symfony-demo-master/web/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/1symfony-demo-master/web/app_dev.php on line 39
+[12-Jul-2017 06:26:09 UTC] PHP Stack trace:
+[12-Jul-2017 06:26:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/1symfony-demo-master/web/app_dev.php:0
+[12-Jul-2017 06:26:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/1symfony-demo-master/web/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/1symfony-demo-master/web/app_dev.php on line 39
+[12-Jul-2017 06:26:09 UTC] PHP Stack trace:
+[12-Jul-2017 06:26:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/1symfony-demo-master/web/app_dev.php:0

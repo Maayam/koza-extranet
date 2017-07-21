@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<!-- WORK AREA -->
+	<section id="explorer-section">
+		<header>
+			<div class="breadcrumbs-wrapper">
+				<ul class="breadcrumbs">
+					<li class="breadcrumb">
+						<a href="{{path('home')}}">
+							Extranet
+						</a>
+					</li>
+					<li class="breadcrumb">
+						<a href="{{path('show_user', {'userId': user.id})}}">
+							{% if(user.company != '') %}
+							{{user.company}}
+							{% else %}
+							{{user.firstName}} {{user.familyName}}
+							{% endif %}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div id="left-pane">
+			<table id="details">
+				<tr>
+					<td class="attr">Societe :</td>
+					<td>{{user.company}} [siret : {{user.siret}}]</td>
+				</tr>
+				<tr>
+					<td class="attr">Email :</td>
+					<td><strong>{{user.email}}</strong></td>
+				</tr>
+				<tr>
+					<td class="attr">Telephone :</td>
+					<td><strong>{{user.telephone}}</strong></td>
+				</tr>
+				<tr>
+					<td class="attr">Adresse :</td>
+					<td>{{user.address}}</td>
+				</tr>
+				<tr>
+					<td class="attr">Enregistré le :</td>
+					<td>{{user.created|date('d-m-Y')}}</td>
+				</tr>
+			</table>
+			{% if (app.user.roles[0] == 'ROLE_ADMIN') %}
+			<ul id="toolbar">
+				<header>
+					Administration
+				</header>
+				<li>
+					<a href="{{path('edit_user', {'userId': user.id})}}">éditer ce client</a>
+				</li>
+				<li>
+					<a class="delete" href="{{path('delete_user', {'userId': user.id})}}">Supprimer ce client</a>
+				</li>
+				<li>
+					<a href="{{path('new_mission', {'userId': user.id})}}">Ajouter une mission</a>
+				</li>
+			</ul>
+			{% endif %}
+		</div>
+		<section id="right-pane">
+			<a class="element-link" href="{{path('new_mission', {'userId': user.id})}}">
+				<div class="element">
+					<div class="icon plus"></div>
+					<div class="title">Ajouter une mission</div>
+				</div>
+			</a>
+			{% if missions|length>0 %}
+			{% for mission in missions %}
+				<a class="element-link" href="{{path('show_mission', {'missionId': mission.id})}}">
+					<div class="element">
+						<div class="icon folder"></div>
+						<div class="title">{{mission.name}}</div>
+					</div>
+				</a>
+			{% endfor %}
+			{% else %}
+				<p>Aucune mission n'a été enregistrée pour le moment...</p>
+			{% endif %}
+		</section>
+	</section>
+{% endblock %}

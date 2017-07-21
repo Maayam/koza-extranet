@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 0.0.0.0
+    database_port: null
+    database_name: c9
+    database_user: maayam
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
+    secret: d4ceb539c43421730f164993072b72a5e16ee438
+    media_directory: uploads/
+    mission_thumbnail_directory: thumbnails/mission/

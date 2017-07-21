@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<!-- WORK AREA -->
+	<section id="explorer-section">
+		<header>
+			<div class="breadcrumbs-wrapper">
+				<ul class="breadcrumbs">
+					<li class="breadcrumb">
+						<a href="{{path('home')}}">
+							Extranet
+						</a>
+					</li>
+					<li class="breadcrumb">
+						<a href="{{path('show_user', {'userId': user.id})}}">
+							{% if(user.company != '') %}
+							{{user.company}}
+							{% else %}
+							{{user.firstName}} {{user.familyName}}
+							{% endif %}
+						</a>
+					</li>
+					<li class="breadcrumb">
+						<a href="{{path('show_mission', {'missionId': mission.id})}}">
+							{{mission.name}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div id="left-pane">
+			<table id="details">
+				{% if(mission.path != '') %}
+				<tr>
+					<td>
+						<img class="mission-thumbnail" src="{{asset("web/thumbnails/mission/"~mission.path)}}" />
+					</td>
+				</tr>
+				{% endif %}
+				<tr>
+					<td>{{mission.name}}</td>
+				</tr>
+				<tr>
+					<td><strong>{{mission.type}}</strong></td>
+				</tr>
+				<tr>
+					<td><strong>{{mission.adress}}</strong></td>
+				</tr>
+				<tr>
+					<td>{{mission.tasks}}</td>
+				</tr>
+				<tr>
+					<td>{{user.gender}} {{user.familyName}} {{user.firstName}}</td>
+				</tr>
+				<tr>
+					<td>{{mission.time}}</td>
+				</tr>
+				<tr>
+					<td>{{mission.created|date('d-m-Y')}}</td>
+				</tr>
+			</table>
+			{% if (app.user.roles[0] == 'ROLE_ADMIN') %}
+			<ul id="toolbar">
+				<header>
+					Administration
+				</header>
+				<li>
+					<a href="{{path('new_media', {'missionId': mission.id})}}">Téléverser un document</a>
+				</li>
+				<li>
+					<a href="{{path('edit_mission', {'missionId': mission.id})}}">éditer cette mission</a>
+				</li>
+				<li>
+					<a class="delete" href="{{path('delete_mission', {'missionId': mission.id})}}">Supprimer cette mission</a>
+				</li>
+			</ul>
+			{% endif %}
+		</div>
+		<section id="right-pane">
+			<table id="mission-table">
+			{% if mediaList|length>0 %}
+				<tr>
+					<th></th>
+					<th>Fichier</th>
+					<th>description</th>
+					<th>date dérnière mise à jour</th>
+					<th>Actions</th>
+				</tr>
+			{% for media in mediaList %}
+				<tr>
+					<td class="icon file col-10"></td>
+					<td class="col-20 text-center">
+						<div class="title">{{media.name}}</div>
+					</td>
+					<td class="col-30">
+						<div class="title">{{media.message}}</div>
+					</td>
+					<td class="col-10">
+						<div class="title">{{media.created|date('d/m/Y')}}</div>
+					</td>
+					<td class="col-30 text-right"><ul>
+						<li><a href="{{path('show_media', {'mediaId': media.id})}}">Télécharger</a></li>
+					{% if (app.user.roles[0] == 'ROLE_ADMIN') %}
+						<li><a class="delete" href="{{path('delete_media', {'mediaId': media.id})}}">Supprimer</a></li>
+					{% endif %}
+					</ul></td>
+				</tr>
+			{% endfor %}
+			{% else %}
+				<p>Aucun document n'a été enregistrée pour le moment...</p>
+			{% endif %}
+			</table>
+		</section>
+	</section>
+{% endblock %}

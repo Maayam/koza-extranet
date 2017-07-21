@@ -1,0 +1,358 @@
+/*
+* CSS FILE FOR KOZA EXTRANET APP
+* Descrition: Tiny app for file and permission managment for KOZA
+* Author: Antoine DEVOS
+*/
+
+  /***********/
+ /* SUMMARY */
+/***********/
+/*
+*
+* 1. GENERAL
+* 2. TOP BAR
+* 3. BODY SECTION
+* 4. BREADCRUMBS
+* 5. POPUP SECTION
+* 6. LEFT-PANE
+* 7. MISSIONS
+*/
+
+  /**************/
+ /* 1. GENERAL */
+/**************/
+body{
+	padding:0;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:0;
+	padding:0;
+	background-color:rgb(211,233,345);
+	font-family: "Open sans";
+}
+h1, h2, h3, h4, h5, h6{
+	color: #4a4a4a;
+	font-family: "Sans serif";
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+p, strong, a{
+	color: #4a4a4a;
+	font-family: "Sans serif";
+}
+label{
+	color:#a1a1a1;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+  /**************/
+ /* 2. TOP BAR */
+/**************/
+#top-bar{
+	position:relative;
+	display:block;
+	width:100%;
+	top:0;
+	background-color:#fff;
+	height:90px;
+}
+#top-bar .logo-link{
+	display:block;
+	float:left;
+	height:90px;
+}
+#top-bar .logo-link .logo{
+	height:90px;
+}
+nav{
+	height:100%;
+}
+nav > ul{
+	list-style-type: none;
+	margin:0;
+	height:100%;
+}
+#top-left-nav{
+	float:left;
+}
+#top-right-nav{
+	float:right;
+}
+#top-left-nav-list{
+	padding:0 1em;
+	text-align:left;
+	float:left;
+}
+#top-right-nav-list{
+	position:absolute;
+	right:0;
+	padding:0 1em;
+	text-align:right;
+	float:right;
+}
+.nav-link{
+	display:inline-block;
+	height:100%;
+	line-height:90px;
+}
+nav > ul > .nav-link:first-child{
+	margin-left: 0;
+	margin-right:1em;
+}
+nav > ul > .nav-link{
+	margin: 0 1em;
+}
+nav > ul > .nav-link:last-child{
+	margin-left:1em;
+	margin-right:0;
+}
+.top-right-nav-element{
+	display:inline;
+}
+
+  /*******************/
+ /* 3. BODY SECTION */
+/*******************/
+
+/* 3.1 GENERAL */
+section{
+	background-color: #fff;
+	padding: 2em;
+	margin:2em;
+	box-shadow: 5px 5px 5px #0000004d;
+}
+#right-pane section{
+	background-color: transparent;
+	padding: 0;
+	margin:0;
+	box-shadow: none;
+}
+#login-section{
+	width: 800px;
+	margin: 90px auto;
+}
+
+/* 3.2 RIGHT-PANE */
+#explorer-section{
+	padding: 1em 0.25em 0.25em 0.25em;
+	position: absolute;
+	top: 90px;
+	left: 1em;
+	right: 1em;
+	bottom: 0em;
+	min-height:500px;
+}
+#right-pane{
+	display:inline-block;
+	width:70%;
+	background-color:#f6f6f6;
+	position: absolute;
+	top: 3em;
+	right: 0.2em;
+	bottom: 0.2em;
+	overflow-y: scroll;
+	margin: 0;
+}
+
+/* 3.3 ELEMENTS AND ICONS */
+#right-pane .element-link{
+	display:inline-block;
+	text-align:center;
+}
+#right-pane .element{
+	position:relative;
+	display:inline-block;
+	width: 150px;
+	height: 177px;
+	margin: 7px;
+	overflow-y: hidden;
+	margin-bottom:1em;
+}
+.icon{
+	width: 100%;
+	height: 150px;
+}
+#right-pane .title{
+	margin-top: -1.5em;
+	font-size: 0.8em;
+}
+
+.icon{
+	background-size:90%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	opacity: 0.7;
+	transition:0.3s;
+}
+.icon:hover{
+	background-size:95%;
+	opacity:1;
+	transition:0.3s;
+}
+
+.icon.plus{
+	background-image: url('../img/plus.png');
+	background-size:70%;
+}
+.icon.plus:hover{
+	background-image: url('../img/plus.png');
+	background-size:80%;
+}
+.icon.upload{
+	background-image: url('../img/upload.png');
+}
+.icon.client{
+	background-image: url('../img/user.png');
+}
+.icon.folder{
+	background-image: url('../img/folder.png');
+}
+.icon.file{
+	background-image: url('../img/file.png');
+}
+
+  /******************/
+ /* 4. BREADCRUMBS */
+/******************/
+.breadcrumbs{
+	margin:0em 2em;
+}
+.breadcrumb{
+	display:inline-block;
+	margin-right:1em;
+}
+.breadcrumb::after{
+	content: '>';
+	position: relative;
+	left: 0.5em;
+}
+
+  /********************/
+ /* 5. POPUP SECTION */
+/********************/
+section.popup{
+	position:fixed;
+	top:0;
+	left:25%;
+	right:25%;
+	z-index:100;
+	max-height:525px;
+	border:1px solid black;
+	overflow-y:scroll;
+}
+.popup label{
+	display: inline-block;
+	width: 40%;
+	font-size:0.8em;
+	text-align:right;
+	padding-right:3em;
+	font-family:"Sans serif";
+}
+.popup input{
+	display:inline-block;
+	width:40%;
+}
+
+.popup > form > div{
+	margin-bottom: 1.5em;
+}
+
+.popup > form > div > button{
+	background-color: #fff;
+	width: 100%;
+	padding: 0.5em;
+	text-align: center;
+	font-size: 1.2em;
+	color: #ccc;
+	border: 3px solid #489ef5;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.popup > form > div > button:hover{
+	background-color: #eee;
+	color: #444;
+	transition: 0.5s;
+}
+
+.popup ul{
+	float:right;
+}
+
+  /****************/
+ /* 6. LEFT-PANE */
+/****************/
+
+#left-pane{
+	display:inline-block;
+	width:24%;
+	margin-top:1em;
+}
+#details .attr{
+	color:#888 !important;
+}
+
+#toolbar{
+	margin-top:2em;
+}
+#toolbar header{
+	margin-bottom: 1em;
+	text-decoration: underline;
+
+}
+#toolbar li{
+	margin-left:1em;
+}
+#toolbar a{
+	position:relative;
+	left:0em;
+	text-decoration:none;
+	transition:0.5s;
+}
+#toolbar a:hover{
+	color: #c7da31;
+	position: relative;
+	left: 1.5em;
+	transition: 0.5s;
+}
+
+  /****************/
+ /* 7. MISSIONS */
+/****************/
+
+#mission-table{
+	margin: 0em -2em;	
+}
+#mission-table td{
+	padding:0.5em;
+}
+#mission-table .text-center{
+	text-align:center;
+}
+#mission-table .text-right{
+	text-align:right;
+}
+#mission-table .col-10{
+	width: 10%;
+}
+#mission-table .col-20{
+	width: 20%;
+}
+#mission-table .col-30{
+	width: 30%;
+}
+#mission-table .col-40{
+	width: 40%;
+}
+.mission-thumbnail{
+	max-width: 100%;
+	max-height: 200px;
+}

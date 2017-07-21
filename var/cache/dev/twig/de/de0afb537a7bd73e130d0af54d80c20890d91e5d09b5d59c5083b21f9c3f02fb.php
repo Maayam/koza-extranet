@@ -21,29 +21,29 @@ class __TwigTemplate_e5cc1b1cad87c54d5224faa236600059045fb8e27977dc3b162eeb2e21d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f0abec5b76ebd7ee7025e60794a8c4431e75f0939fc735fe6eac9a1fd6d7c4d4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f0abec5b76ebd7ee7025e60794a8c4431e75f0939fc735fe6eac9a1fd6d7c4d4->enter($__internal_f0abec5b76ebd7ee7025e60794a8c4431e75f0939fc735fe6eac9a1fd6d7c4d4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "explorer/user.html.twig"));
+        $__internal_f59299906d3eb8708058cc731a23e3d5988b3a19682db3e1dba6f49dc2f50b1a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f59299906d3eb8708058cc731a23e3d5988b3a19682db3e1dba6f49dc2f50b1a->enter($__internal_f59299906d3eb8708058cc731a23e3d5988b3a19682db3e1dba6f49dc2f50b1a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "explorer/user.html.twig"));
 
-        $__internal_4aaf43f86fb550044ddd3c02e41037d916c240df687632a1ce860a65c48ba921 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4aaf43f86fb550044ddd3c02e41037d916c240df687632a1ce860a65c48ba921->enter($__internal_4aaf43f86fb550044ddd3c02e41037d916c240df687632a1ce860a65c48ba921_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "explorer/user.html.twig"));
+        $__internal_054e9b4f69ff0a72a423ea92f7775bb849b7483cb029d0664ac990fe4172ec91 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_054e9b4f69ff0a72a423ea92f7775bb849b7483cb029d0664ac990fe4172ec91->enter($__internal_054e9b4f69ff0a72a423ea92f7775bb849b7483cb029d0664ac990fe4172ec91_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "explorer/user.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f0abec5b76ebd7ee7025e60794a8c4431e75f0939fc735fe6eac9a1fd6d7c4d4->leave($__internal_f0abec5b76ebd7ee7025e60794a8c4431e75f0939fc735fe6eac9a1fd6d7c4d4_prof);
+        $__internal_f59299906d3eb8708058cc731a23e3d5988b3a19682db3e1dba6f49dc2f50b1a->leave($__internal_f59299906d3eb8708058cc731a23e3d5988b3a19682db3e1dba6f49dc2f50b1a_prof);
 
         
-        $__internal_4aaf43f86fb550044ddd3c02e41037d916c240df687632a1ce860a65c48ba921->leave($__internal_4aaf43f86fb550044ddd3c02e41037d916c240df687632a1ce860a65c48ba921_prof);
+        $__internal_054e9b4f69ff0a72a423ea92f7775bb849b7483cb029d0664ac990fe4172ec91->leave($__internal_054e9b4f69ff0a72a423ea92f7775bb849b7483cb029d0664ac990fe4172ec91_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_4412b4e88c507756ea1bde3096c452411ed68f2a2b88a3ee00258b39df1c6918 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4412b4e88c507756ea1bde3096c452411ed68f2a2b88a3ee00258b39df1c6918->enter($__internal_4412b4e88c507756ea1bde3096c452411ed68f2a2b88a3ee00258b39df1c6918_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_ff4d2d7f0d6a5c7e3c928d7ed1b7fbed93c4c7ce815ec81ab7438c69e88adfce = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ff4d2d7f0d6a5c7e3c928d7ed1b7fbed93c4c7ce815ec81ab7438c69e88adfce->enter($__internal_ff4d2d7f0d6a5c7e3c928d7ed1b7fbed93c4c7ce815ec81ab7438c69e88adfce_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_b2b7fd1933d107f260f3b16510a71902008aa95709d385051baa9f792d6003c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b2b7fd1933d107f260f3b16510a71902008aa95709d385051baa9f792d6003c1->enter($__internal_b2b7fd1933d107f260f3b16510a71902008aa95709d385051baa9f792d6003c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_bdb6cdf98d62e7419afdafaab209692835d2c50bb32f3c5afbb7db10427ccc96 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bdb6cdf98d62e7419afdafaab209692835d2c50bb32f3c5afbb7db10427ccc96->enter($__internal_bdb6cdf98d62e7419afdafaab209692835d2c50bb32f3c5afbb7db10427ccc96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "\t<!-- WORK AREA -->
@@ -159,31 +159,36 @@ class __TwigTemplate_e5cc1b1cad87c54d5224faa236600059045fb8e27977dc3b162eeb2e21d
         // line 65
         echo "\t\t</div>
 \t\t<section id=\"right-pane\">
-\t\t\t<a class=\"element-link\" href=\"";
+\t\t\t";
         // line 67
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("new_mission", array("userId" => $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()))), "html", null, true);
-        echo "\">
+        if (($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "roles", array()), 0, array(), "array") == "ROLE_ADMIN")) {
+            // line 68
+            echo "\t\t\t<a class=\"element-link\" href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("new_mission", array("userId" => $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()))), "html", null, true);
+            echo "\">
 \t\t\t\t<div class=\"element\">
 \t\t\t\t\t<div class=\"icon plus\"></div>
 \t\t\t\t\t<div class=\"title\">Ajouter une mission</div>
 \t\t\t\t</div>
 \t\t\t</a>
 \t\t\t";
-        // line 73
+        }
+        // line 75
+        echo "\t\t\t";
         if ((twig_length_filter($this->env, (isset($context["missions"]) ? $context["missions"] : $this->getContext($context, "missions"))) > 0)) {
-            // line 74
+            // line 76
             echo "\t\t\t";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["missions"]) ? $context["missions"] : $this->getContext($context, "missions")));
             foreach ($context['_seq'] as $context["_key"] => $context["mission"]) {
-                // line 75
+                // line 77
                 echo "\t\t\t\t<a class=\"element-link\" href=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("show_mission", array("missionId" => $this->getAttribute($context["mission"], "id", array()))), "html", null, true);
                 echo "\">
 \t\t\t\t\t<div class=\"element\">
 \t\t\t\t\t\t<div class=\"icon folder\"></div>
 \t\t\t\t\t\t<div class=\"title\">";
-                // line 78
+                // line 80
                 echo twig_escape_filter($this->env, $this->getAttribute($context["mission"], "name", array()), "html", null, true);
                 echo "</div>
 \t\t\t\t\t</div>
@@ -193,22 +198,22 @@ class __TwigTemplate_e5cc1b1cad87c54d5224faa236600059045fb8e27977dc3b162eeb2e21d
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mission'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 82
+            // line 84
             echo "\t\t\t";
         } else {
-            // line 83
+            // line 85
             echo "\t\t\t\t<p>Aucune mission n'a été enregistrée pour le moment...</p>
 \t\t\t";
         }
-        // line 85
+        // line 87
         echo "\t\t</section>
 \t</section>
 ";
         
-        $__internal_b2b7fd1933d107f260f3b16510a71902008aa95709d385051baa9f792d6003c1->leave($__internal_b2b7fd1933d107f260f3b16510a71902008aa95709d385051baa9f792d6003c1_prof);
+        $__internal_bdb6cdf98d62e7419afdafaab209692835d2c50bb32f3c5afbb7db10427ccc96->leave($__internal_bdb6cdf98d62e7419afdafaab209692835d2c50bb32f3c5afbb7db10427ccc96_prof);
 
         
-        $__internal_4412b4e88c507756ea1bde3096c452411ed68f2a2b88a3ee00258b39df1c6918->leave($__internal_4412b4e88c507756ea1bde3096c452411ed68f2a2b88a3ee00258b39df1c6918_prof);
+        $__internal_ff4d2d7f0d6a5c7e3c928d7ed1b7fbed93c4c7ce815ec81ab7438c69e88adfce->leave($__internal_ff4d2d7f0d6a5c7e3c928d7ed1b7fbed93c4c7ce815ec81ab7438c69e88adfce_prof);
 
     }
 
@@ -224,7 +229,7 @@ class __TwigTemplate_e5cc1b1cad87c54d5224faa236600059045fb8e27977dc3b162eeb2e21d
 
     public function getDebugInfo()
     {
-        return array (  204 => 85,  200 => 83,  197 => 82,  187 => 78,  180 => 75,  175 => 74,  173 => 73,  164 => 67,  160 => 65,  153 => 61,  147 => 58,  141 => 55,  134 => 50,  132 => 49,  126 => 46,  119 => 42,  112 => 38,  105 => 34,  96 => 30,  85 => 21,  77 => 19,  71 => 17,  69 => 16,  65 => 15,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  209 => 87,  205 => 85,  202 => 84,  192 => 80,  185 => 77,  180 => 76,  177 => 75,  166 => 68,  164 => 67,  160 => 65,  153 => 61,  147 => 58,  141 => 55,  134 => 50,  132 => 49,  126 => 46,  119 => 42,  112 => 38,  105 => 34,  96 => 30,  85 => 21,  77 => 19,  71 => 17,  69 => 16,  65 => 15,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -303,12 +308,14 @@ class __TwigTemplate_e5cc1b1cad87c54d5224faa236600059045fb8e27977dc3b162eeb2e21d
 \t\t\t{% endif %}
 \t\t</div>
 \t\t<section id=\"right-pane\">
+\t\t\t{% if (app.user.roles[0] == 'ROLE_ADMIN') %}
 \t\t\t<a class=\"element-link\" href=\"{{path('new_mission', {'userId': user.id})}}\">
 \t\t\t\t<div class=\"element\">
 \t\t\t\t\t<div class=\"icon plus\"></div>
 \t\t\t\t\t<div class=\"title\">Ajouter une mission</div>
 \t\t\t\t</div>
 \t\t\t</a>
+\t\t\t{% endif %}
 \t\t\t{% if missions|length>0 %}
 \t\t\t{% for mission in missions %}
 \t\t\t\t<a class=\"element-link\" href=\"{{path('show_mission', {'missionId': mission.id})}}\">

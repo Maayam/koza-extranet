@@ -17,10 +17,10 @@ class MissionType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('name', TextType::class, array('label' => 'Nom de la mission', 'required' => true))
-        ->add('type', TextType::class, array('label' => 'Type de mission', 'required' => false))
+        ->add('type', TextType::class, array('label' => 'Nature du projet', 'required' => false))
         ->add('adress', TextType::class, array('label' => 'Adresse du projet', 'required' => false))
-        ->add('tasks', TextType::class, array('label' => 'Interventions prévues', 'required' => false))
-        ->add('time', TextType::class, array('label' => 'Dates d\'intervention prévues', 'required' => false))
+        ->add('tasks', TextType::class, array('label' => 'Prestations', 'required' => false))
+        ->add('time', TextType::class, array('label' => 'Dates d\'intervention', 'required' => false))
         ->add('path', FileType::class, array('label' => 'Image (jpg ou png)', 'required' => false));
     }
     

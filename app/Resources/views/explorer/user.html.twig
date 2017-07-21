@@ -64,12 +64,14 @@
 			{% endif %}
 		</div>
 		<section id="right-pane">
+			{% if (app.user.roles[0] == 'ROLE_ADMIN') %}
 			<a class="element-link" href="{{path('new_mission', {'userId': user.id})}}">
 				<div class="element">
 					<div class="icon plus"></div>
 					<div class="title">Ajouter une mission</div>
 				</div>
 			</a>
+			{% endif %}
 			{% if missions|length>0 %}
 			{% for mission in missions %}
 				<a class="element-link" href="{{path('show_mission', {'missionId': mission.id})}}">

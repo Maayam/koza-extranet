@@ -1633,3 +1633,57 @@ Stack trace:
 [19-Jul-2017 12:16:06 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/var/cache/dev/classes.php:4408
 [19-Jul-2017 12:16:06 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/var/cache/dev/classes.php:4453}() /home/ubuntu/workspace/var/cache/dev/classes.php:4453
 [19-Jul-2017 12:16:06 UTC] PHP   6. AppBundle\Controller\MissionController->editAction() /home/ubuntu/workspace/var/cache/dev/classes.php:4453
+[21-Jul-2017 14:48:02 UTC] PHP Warning:  require(dump_var.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/web/app_dev.php on line 33
+[21-Jul-2017 14:48:02 UTC] PHP Stack trace:
+[21-Jul-2017 14:48:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[21-Jul-2017 14:48:02 UTC] PHP Fatal error:  require(): Failed opening required 'dump_var.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/web/app_dev.php on line 33
+[21-Jul-2017 14:48:02 UTC] PHP Stack trace:
+[21-Jul-2017 14:48:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  scandir(/home/ubuntu/workspace/web/uploads/): failed to open dir: No such file or directory in /home/ubuntu/workspace/batch-db.php on line 21
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. scandir() /home/ubuntu/workspace/batch-db.php:21
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/ubuntu/workspace/batch-db.php on line 21
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. scandir() /home/ubuntu/workspace/batch-db.php:21
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /home/ubuntu/workspace/batch-db.php on line 22
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. array_shift() /home/ubuntu/workspace/batch-db.php:22
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /home/ubuntu/workspace/batch-db.php on line 23
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. array_shift() /home/ubuntu/workspace/batch-db.php:23
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  scandir(/home/ubuntu/workspace/web/thumbnails/mission/): failed to open dir: No such file or directory in /home/ubuntu/workspace/batch-db.php on line 27
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. scandir() /home/ubuntu/workspace/batch-db.php:27
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/ubuntu/workspace/batch-db.php on line 27
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. scandir() /home/ubuntu/workspace/batch-db.php:27
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /home/ubuntu/workspace/batch-db.php on line 28
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. array_shift() /home/ubuntu/workspace/batch-db.php:28
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  array_shift() expects parameter 1 to be array, boolean given in /home/ubuntu/workspace/batch-db.php on line 29
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP   3. array_shift() /home/ubuntu/workspace/batch-db.php:29
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/batch-db.php on line 32
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
+[24-Jul-2017 10:42:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/batch-db.php on line 42
+[24-Jul-2017 10:42:14 UTC] PHP Stack trace:
+[24-Jul-2017 10:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/app_dev.php:0
+[24-Jul-2017 10:42:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/web/app_dev.php:8
